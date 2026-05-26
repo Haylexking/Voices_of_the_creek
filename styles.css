@@ -823,13 +823,16 @@ footer {
     transform: translateY(0);
   }
 
-  .hero { padding: 0 1.25rem 6vh; }
+  .hero {
+    padding: 0 1.25rem 4vh;
+    min-height: 72vh;
+  }
   .section-intro, .posts-section { padding: 4rem 1.25rem; }
   .posts-header { margin-bottom: 2rem; }
   .post-body-wrap { padding: 2.5rem 1.25rem 4rem; }
   .post-hero { padding: 6rem 1.25rem 3rem; }
 
-  /* Subpage and floating elements mobile refinements */
+  /* Subpage mobile refinements */
   .post-image-full {
     max-height: 280px;
   }
@@ -842,13 +845,14 @@ footer {
     aspect-ratio: 4/3;
   }
 
-  .float-stat {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin: 1.5rem auto 0;
-    width: max-content;
-    display: block;
-    text-align: center;
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-links {
+    text-align: left;
+    align-items: flex-start;
   }
 }
