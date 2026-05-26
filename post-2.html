@@ -14,6 +14,13 @@
 <!-- NAV -->
 <nav>
   <a href="index.html" class="nav-brand">Voices of the Creek</a>
+  <button class="nav-toggle" aria-label="Toggle Navigation">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
   <ul class="nav-links">
     <li><a href="index.html#posts">Blog Posts</a></li>
     <li><a href="index.html#about">About</a></li>
@@ -154,6 +161,22 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Mobile menu toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
