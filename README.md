@@ -1,4 +1,4 @@
-# Voices of the Creek — The Efik People of Nigeria
+# The Efik People — Calabar Heritage
 A premium, multi-page cultural showcase of the Efik people of Calabar, Cross River State, Nigeria. Prepared as part of the academic coursework for the Department of Communication and Language Arts (CLA 706: Indigenous Communication Systems) at the University of Ibadan.
 
 This project has been refactored from a single monolithic file into a clean, modular multi-page static website to ensure ease of deployment, robust portability, and professional presentation.
