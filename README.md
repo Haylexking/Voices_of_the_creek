@@ -14,8 +14,9 @@ Voices_of_the_creek/
 ├── post-2.html       # Part 2: Culinary Delights, Rhythmic Traditions, and Royal Leadership
 ├── post-3.html       # Part 3: Contemporary Challenges and Protecting Indigenous Cultures
 ├── styles.css        # Centralized stylesheet (all custom typography, layout grids, variables, and transitions)
+├── vercel.json       # Vercel configuration (for Clean URLs routing)
 ├── README.md         # Project documentation (this file)
-└── IMG-*.jpg         # Mapped visual media assets (12 files)
+└── images/           # Professional media folder containing all PNG images
 ```
 
 ---
@@ -47,16 +48,16 @@ Below is the definitive mapping of the images in the website. Use this guide if 
 
 | Page / Section | Current Filename | Position & Purpose | Ideal Visual Theme / Subject | Aspect Ratio | Recommended Search Terms |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Home Page** | `IMG-20260526-WA0114.jpg` | Intro Section Image | Efik women in traditional beaded attire, wrappers, and coral beads. | **4:5** (Portrait) | `"Efik traditional attire"`, `"Efik wedding beads"`, `"Calabar women"` |
-| **Part 1 (Blog Card & Hero)** | `IMG-20260526-WA0115.jpg` | Card 1 in `index.html` & Header in `post-1.html` | Aerial landscape of Calabar, Cross River coastline, or Calabar city scenery. | **16:10** (Card) & **Full-width** (Hero) | `"Calabar city aerial"`, `"Cross River Nigeria"`, `"Calabar waterways"` |
-| **Part 1 (Figure 1)** | `IMG-20260526-WA0116.jpg` | Inline image in `post-1.html` (first body section) | Efik elders and men dressed in their elegant traditional attire. | **16:9** (Landscape) | `"Efik traditional attire"`, `"Efik elders Calabar"` |
-| **Part 1 (Figure 2)** | `IMG-20260526-WA0117.jpg` | Inline image in `post-1.html` (second body section) | Vibrant performers in elaborate beaded costumes at the Calabar Carnival. | **16:9** (Landscape) | `"Calabar Carnival"`, `"Efik Ekpe masquerade"` |
-| **Part 2 (Blog Card & Hero)** | `IMG-20260526-WA0121.jpg` | Card 2 in `index.html` & Header in `post-2.html` | A majestic view of Ekombi dance performers or a traditional royal Efik feast. | **16:10** (Card) & **Full-width** (Hero) | `"Ekombi dance"`, `"Calabar dance traditional"`, `"Efik palace"` |
-| **Part 2 (Figure 3)** | `IMG-20260526-WA0119.jpg` | Inline image in `post-2.html` (first body section) | A premium bowl of Edikang Ikong soup served with pounded yam/eba. | **16:9** (Landscape) | `"Edikang Ikong soup"`, `"Nigerian traditional soup"`, `"Calabar food"` |
-| **Part 2 (Figure 4)** | `IMG-20260526-WA0120.jpg` | Inline image in `post-2.html` (second body section) | Close-up of Ekombi dancers demonstrating wave-like movements in brass leg bangles. | **16:9** (Landscape) | `"Ekombi performers"`, `"Calabar traditional dance"` |
-| **Part 3 (Blog Card & Hero)** | `IMG-20260526-WA0118.jpg` | Card 3 in `index.html` & Header in `post-3.html` | Scenery representing environmental impact along the Cross River coast or a community meeting. | **16:10** (Card) & **Full-width** (Hero) | `"Niger Delta river"`, `"Calabar coast pollution"`, `"Nigerian community gather"` |
-| **Part 3 (Figure 5)** | `IMG-20260526-WA0122.jpg` | Inline image in `post-3.html` (first body section) | Mangrove waterway ecosystem showing local livelihood activities like fishing. | **16:9** (Landscape) | `"mangrove swamp Nigeria"`, `"creek fishing Nigeria"` |
-| **Part 3 (Figure 6)** | `IMG-20260526-WA0123.jpg` | Inline image in `post-3.html` (second body section) | His Royal Majesty, the Obong of Calabar, addressing his people from the throne. | **16:9** (Landscape) | `"Obong of Calabar"`, `"Efik king throne"` |
+| **Home Page** | `images/Intro Section Image.png` | Intro Section Image | Efik women in traditional beaded attire, wrappers, and coral beads. | **4:5** (Portrait) | `"Efik traditional attire"`, `"Efik wedding beads"`, `"Calabar women"` |
+| **Part 1 (Blog Card & Hero)** | `images/Part 1 (Blog Card & Hero).png` | Card 1 in `index.html` & Header in `post-1.html` | Aerial landscape of Calabar, Cross River coastline, or Calabar city scenery. | **16:10** (Card) & **Full-width** (Hero) | `"Calabar city aerial"`, `"Cross River Nigeria"`, `"Calabar waterways"` |
+| **Part 1 (Figure 1)** | `images/Part 1 (Figure 1).png` | Inline image in `post-1.html` (first body section) | Efik elders and men dressed in their elegant traditional attire. | **16:9** (Landscape) | `"Efik traditional attire"`, `"Efik elders Calabar"` |
+| **Part 1 (Figure 2)** | `images/Part 1 (Figure 2).png` | Inline image in `post-1.html` (second body section) | Vibrant performers in elaborate beaded costumes at the Calabar Carnival. | **16:9** (Landscape) | `"Calabar Carnival"`, `"Efik Ekpe masquerade"` |
+| **Part 2 (Blog Card & Hero)** | `images/Part 2 (Blog Card & Hero).png` | Card 2 in `index.html` & Header in `post-2.html` | A majestic view of Ekombi dance performers or a traditional royal Efik feast. | **16:10** (Card) & **Full-width** (Hero) | `"Ekombi dance"`, `"Calabar dance traditional"`, `"Efik palace"` |
+| **Part 2 (Figure 3)** | `images/Part 2 (Figure 3).png` | Inline image in `post-2.html` (first body section) | A premium bowl of Edikang Ikong soup served with pounded yam/eba. | **16:9** (Landscape) | `"Edikang Ikong soup"`, `"Nigerian traditional soup"`, `"Calabar food"` |
+| **Part 2 (Figure 4)** | `images/Part 2 (Figure 4).png` | Inline image in `post-2.html` (second body section) | Close-up of Ekombi dancers demonstrating wave-like movements in brass leg bangles. | **16:9** (Landscape) | `"Ekombi performers"`, `"Calabar traditional dance"` |
+| **Part 3 (Blog Card & Hero)** | `images/Part 3 (Blog Card & Hero).png` | Card 3 in `index.html` & Header in `post-3.html` | Scenery representing environmental impact along the Cross River coast or a community meeting. | **16:10** (Card) & **Full-width** (Hero) | `"Niger Delta river"`, `"Calabar coast pollution"`, `"Nigerian community gather"` |
+| **Part 3 (Figure 5)** | `images/Part 3 (Figure 5).png` | Inline image in `post-3.html` (first body section) | Mangrove waterway ecosystem showing local livelihood activities like fishing. | **16:9** (Landscape) | `"mangrove swamp Nigeria"`, `"creek fishing Nigeria"` |
+| **Part 3 (Figure 6)** | `images/Part 3 (Figure 6).png` | Inline image in `post-3.html` (second body section) | His Royal Majesty, the Obong of Calabar, addressing his people from the throne. | **16:9** (Landscape) | `"Obong of Calabar"`, `"Efik king throne"` |
 
 ---
 
