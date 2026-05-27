@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — The Efik People</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .error-wrap {
+    min-height: calc(100vh - 64px - 220px); /* Fill space between nav and footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 1.25rem;
+    background: var(--cream);
+  }
+  
+  .error-code {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(5rem, 15vw, 9rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+  
+  .error-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--deep-brown);
+    margin-bottom: 1.25rem;
+  }
+  
+  .error-desc {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 45ch;
+    margin-bottom: 2.5rem;
+    line-height: 1.75;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index" class="nav-brand">The Efik People</a>
+  <button class="nav-toggle" aria-label="Toggle Navigation">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index#posts">Blog Posts</a></li>
+    <li><a href="index#about">About</a></li>
+  </ul>
+</nav>
+
+<div class="error-wrap">
+  <div class="error-code">404</div>
+  <h1 class="error-title">Lost in the Creek</h1>
+  <p class="error-desc">
+    The page you are looking for has drifted off. It may have been moved, deleted, or never existed in the waterways of this project.
+  </p>
+  <a href="index" class="btn-primary">
+    Return to Mainland
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">The Efik People</p>
+      <p class="footer-note">Produced for CLA 706: Indigenous Communication Systems, Department of Communication and Language Arts, University of Ibadan. All references formatted in APA 7th Edition.</p>
+    </div>
+    <div class="footer-links">
+      <a href="post-1">Part 1: Origins & Culture</a>
+      <a href="post-2">Part 2: Food, Music & Leadership</a>
+      <a href="post-3">Part 3: Challenges & Preservation</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
